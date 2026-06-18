@@ -17,6 +17,7 @@ Customer-behavior-pipeline ingests simulated customer events, processes them, tr
 ## Run the API
 ### "File"
 ## Project layout
+
 app/
 ├── main.py            # FastAPI app and router registration
 api/
