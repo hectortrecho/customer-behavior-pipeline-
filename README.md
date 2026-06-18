@@ -17,7 +17,7 @@ Customer-behavior-pipeline ingests simulated customer events, processes them, tr
 ## Run the API
 ### "File"
 ## Project layout
-
+///
 app/
 ├── main.py            # FastAPI app and router registration
 api/
@@ -38,7 +38,7 @@ models/
 tests/
 requirements.txt
 README.md
-
+///
 # Data pipeline
 1. Synthetic data generation (configurable personas, sessions, events)
 2. Ingestion endpoint writes to in-memory queue or storage
