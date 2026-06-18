@@ -18,22 +18,22 @@ Customer-behavior-pipeline ingests simulated customer events, processes them, tr
 ### "File"
 ## Project layout
 app/
-    main.py # FastAPI app and router registration
+└── main.py # FastAPI app and router registration
 api/
-    endpoints.py # Inference, train, eval, ingest, health endpoints
+└── endpoints.py # Inference, train, eval, ingest, health endpoints
 core/
-    config.py # app settings
-    logging.py
+├── config.py # app settings
+└── logging.py
 data/
-    generator.py # synthetic data generator
-    ingest.py # ingestion helpers
-    preprocess.py # feature engineering
+├── generator.py # synthetic data generator
+├── ingest.py # ingestion helpers
+└── preprocess.py # feature engineering
 models/
-    trainer.py # training loop and hyperparams
-    evaluator.py
-    store.py # save/load models
-    schemas.py # Pydantic models for requests/responses
-    tasks.py # background job orchestration
+├── trainer.py # training loop and hyperparams
+├── evaluator.py
+├── store.py # save/load models
+├── schemas.py # Pydantic models for requests/responses
+└──tasks.py # background job orchestration
 tests/
 requirements.txt
 README.md
